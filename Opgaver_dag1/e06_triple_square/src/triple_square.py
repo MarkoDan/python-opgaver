@@ -3,11 +3,11 @@
 
 def main():
     for i in range(1, 11):
-        triple(i)
-        square(i)
-        if square(i) > triple(i):
+        triple_result = triple(i)
+        square_result = square(i)
+        if square_result > triple_result:
             break
-        print(f"triple({i}) == {triple(i)} square({i}) == {square(i)}")
+        print(f"triple({i})=={triple_result} square({i})=={square_result}")
 
 
 def triple(num):
